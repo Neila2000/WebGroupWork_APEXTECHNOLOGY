@@ -11,23 +11,23 @@
  */
 
 const products = [
-    { id: 1, name: "Gaming Laptop Pro", category: "laptops", price: 1200, image: "../Asset/Laptops/1f887754176cb7628948f1a49f16045d.jpg", description: "High-performance gaming laptop with advanced graphics" },
-    { id: 2, name: "Business Ultrabook", category: "laptops", price: 1500, image: "../Asset/Laptops/26073a8430872d83b52106e628b4d2d3.jpg", description: "Sleek and powerful ultrabook for professionals" },
-    { id: 3, name: "MacBook Pro", category: "laptops", price: 2000, image: "../Asset/Laptops/mac1.jpg", description: "Premium MacBook with cutting-edge technology" },
-    { id: 4, name: "Student Laptop", category: "laptops", price: 800, image: "../Asset/Laptops/389552d7b70c1cb3e5355392fbad23c0.jpg", description: "Affordable laptop perfect for students" },
-    { id: 5, name: "Workstation Laptop", category: "laptops", price: 1800, image: "../Asset/Laptops/403d69657ac28e82ed595279bd4efd73.jpg", description: "Powerful workstation for demanding tasks" },
-    { id: 6, name: "Portable Laptop", category: "laptops", price: 950, image: "../Asset/Laptops/581ac5eb9ee184d2fa29e61c5d5246ab.jpg", description: "Lightweight and portable laptop" },
-    { id: 7, name: "Premium Laptop", category: "laptops", price: 1600, image: "../Asset/Laptops/6dec28314853c15185e80ce94cede571.jpg", description: "Premium laptop with exceptional build quality" },
-    { id: 8, name: "Budget Laptop", category: "laptops", price: 600, image: "../Asset/Laptops/92034744f889fcfd1a692dd1f98935ed.jpg", description: "Budget-friendly laptop for everyday use" },
-    { id: 9, name: "Professional Laptop", category: "laptops", price: 1400, image: "../Asset/Laptops/b767481d1a04371f089971513c22fe28.jpg", description: "Professional-grade laptop for business" },
-    { id: 10, name: "Creative Laptop", category: "laptops", price: 1700, image: "../Asset/Laptops/c8254713229f2798932b90e3d271fb82.jpg", description: "Perfect for creative professionals" },
-    { id: 11, name: "Wireless Headphones Pro", category: "headphones", price: 200, image: "../Asset/HeadPhones/head1-removebg-preview.png", description: "Premium wireless headphones with noise cancellation" },
-    { id: 12, name: "Gaming Headset", category: "headphones", price: 150, image: "../Asset/HeadPhones/head2-removebg-preview.png", description: "High-quality gaming headset with surround sound" },
-    { id: 13, name: "Studio Headphones", category: "headphones", price: 250, image: "../Asset/HeadPhones/head3-removebg-preview.png", description: "Professional studio headphones for audio work" },
-    { id: 14, name: "Sports Headphones", category: "headphones", price: 120, image: "../Asset/HeadPhones/head4-removebg-preview.png", description: "Durable headphones perfect for workouts" },
-    { id: 15, name: "Noise Cancelling Headphones", category: "headphones", price: 300, image: "../Asset/HeadPhones/head5-removebg-preview.png", description: "Advanced noise cancellation technology" },
-    { id: 16, name: "Budget Headphones", category: "headphones", price: 80, image: "../Asset/HeadPhones/head6-removebg-preview.png", description: "Affordable headphones with great sound" },
-    { id: 17, name: "Premium Headphones", category: "headphones", price: 350, image: "../Asset/HeadPhones/head7-removebg-preview.png", description: "Top-tier headphones with exceptional audio quality" }
+    { id: 1, name: "Gaming Laptop Pro", category: "laptops", price: 1200, image: "1f887754176cb7628948f1a49f16045d.jpg", description: "High-performance gaming laptop with advanced graphics" },
+    { id: 2, name: "Business Ultrabook", category: "laptops", price: 1500, image: "26073a8430872d83b52106e628b4d2d3.jpg", description: "Sleek and powerful ultrabook for professionals" },
+    { id: 3, name: "MacBook Pro", category: "laptops", price: 2000, image: "mac1.jpg", description: "Premium MacBook with cutting-edge technology" },
+    { id: 4, name: "Student Laptop", category: "laptops", price: 800, image: "389552d7b70c1cb3e5355392fbad23c0.jpg", description: "Affordable laptop perfect for students" },
+    { id: 5, name: "Workstation Laptop", category: "laptops", price: 1800, image: "403d69657ac28e82ed595279bd4efd73.jpg", description: "Powerful workstation for demanding tasks" },
+    { id: 6, name: "Portable Laptop", category: "laptops", price: 950, image: "581ac5eb9ee184d2fa29e61c5d5246ab.jpg", description: "Lightweight and portable laptop" },
+    { id: 7, name: "Premium Laptop", category: "laptops", price: 1600, image: "6dec28314853c15185e80ce94cede571.jpg", description: "Premium laptop with exceptional build quality" },
+    { id: 8, name: "Budget Laptop", category: "laptops", price: 600, image: "92034744f889fcfd1a692dd1f98935ed.jpg", description: "Budget-friendly laptop for everyday use" },
+    { id: 9, name: "Professional Laptop", category: "laptops", price: 1400, image: "b767481d1a04371f089971513c22fe28.jpg", description: "Professional-grade laptop for business" },
+    { id: 10, name: "Creative Laptop", category: "laptops", price: 1700, image: "c8254713229f2798932b90e3d271fb82.jpg", description: "Perfect for creative professionals" },
+    { id: 11, name: "Wireless Headphones Pro", category: "headphones", price: 200, image: "head1-removebg-preview.png", description: "Premium wireless headphones with noise cancellation" },
+    { id: 12, name: "Gaming Headset", category: "headphones", price: 150, image: "head2-removebg-preview.png", description: "High-quality gaming headset with surround sound" },
+    { id: 13, name: "Studio Headphones", category: "headphones", price: 250, image: "head3-removebg-preview.png", description: "Professional studio headphones for audio work" },
+    { id: 14, name: "Sports Headphones", category: "headphones", price: 120, image: "head4-removebg-preview.png", description: "Durable headphones perfect for workouts" },
+    { id: 15, name: "Noise Cancelling Headphones", category: "headphones", price: 300, image: "head5-removebg-preview.png", description: "Advanced noise cancellation technology" },
+    { id: 16, name: "Budget Headphones", category: "headphones", price: 80, image: "head6-removebg-preview.png", description: "Affordable headphones with great sound" },
+    { id: 17, name: "Premium Headphones", category: "headphones", price: 350, image: "head7-removebg-preview.png", description: "Top-tier headphones with exceptional audio quality" }
 ];
 
 // Save all products to localStorage once (for assignment requirement)
