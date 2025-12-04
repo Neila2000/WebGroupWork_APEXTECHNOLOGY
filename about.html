@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Apex Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="sitename">
+                <h2><a href="index.html">APEX</a></h2>
+                <div class="subtitle">TECHNOLOGY SHOP</div>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop Now</a></li>
+                    <li><a href="about.html">Contact</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li id="loginNavItem" style="display: none;"><a href="signup.html">Register</a></li>
+                    <li id="logoutNavItem" style="display: none;"><a href="#" onclick="handleLogout(); return false;">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon" onclick="menutoggle()" alt="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <h1 class="section-title">About Us</h1>
+            
+            <div class="about-content">
+                <div class="about-card">
+                    <h2>Group Members</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Member 1:</strong>
+                            <span>Sanjay Stewart (ID: 2408878)</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Member 2:</strong>
+                            <span>Rihanna Simpson (ID: 2403226)</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Member 3:</strong>
+                            <span>Neila Jamieson (ID: 2007748)</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Member 4:</strong>
+                            <span>Stefane Allen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <h2>Project Information</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Email:</strong>
+                            <span><a href="mailto:SANJAYSTEWART@students.utech.edu.jm">SANJAYSTEWART@students.utech.edu.jm</a></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Course Name:</strong>
+                            <span>Web Programming</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Assignment Name:</strong>
+                            <span>Group Project - E-commerce Website</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Day/Time of Class:</strong>
+                            <span>Thursday 6pm to 8pm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <h2>Contact Us</h2>
+                    <p>Have questions or feedback? We'd love to hear from you!</p>
+                    <p>Send us an email at: <a href="mailto:SANJAYSTEWART@students.utech.edu.jm?subject=Website Inquiry&body=Hello, I would like to inquire about...">SANJAYSTEWART@students.utech.edu.jm</a></p>
+                </div>
+
+                <div class="about-card">
+                    <h2>Our Mission</h2>
+                    <p>At Apex Technologies, we are committed to providing high-quality technology products including professional laptops and premium headphones. Our mission is to deliver exceptional value and customer service to tech enthusiasts and professionals alike.</p>
+                </div>
+
+                <div class="about-card">
+                    <h2>Our Vision</h2>
+                    <p>To become the leading technology retailer in the Caribbean, known for our innovative products, outstanding customer service, and commitment to excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        function checkLoginStatus() {
+            const isLoggedIn = localStorage.getItem('userLoggedIn') === 'true';
+            const loginNavItem = document.getElementById('loginNavItem');
+            const logoutNavItem = document.getElementById('logoutNavItem');
+            
+            if (isLoggedIn) {
+                if (loginNavItem) loginNavItem.style.display = 'none';
+                if (logoutNavItem) logoutNavItem.style.display = 'block';
+            } else {
+                if (loginNavItem) loginNavItem.style.display = 'block';
+                if (logoutNavItem) logoutNavItem.style.display = 'none';
+            }
+        }
+        
+        function handleLogout() {
+            if (confirm('Are you sure you want to logout?')) {
+                localStorage.removeItem('userLoggedIn');
+                localStorage.removeItem('loggedInTrn');
+                localStorage.removeItem('username');
+                localStorage.removeItem('userFullName');
+                localStorage.removeItem('userEmail');
+                alert('You have been logged out successfully!');
+                checkLoginStatus();
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            checkLoginStatus();
+        });
+    </script>
+</body>
+</html>
+
